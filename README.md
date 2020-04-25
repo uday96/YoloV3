@@ -1,9 +1,12 @@
 # YoloV3
 ________
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/uday96/YoloV3/blob/minion/YoloV3_Minion_Detection.ipynb)
+
 YoloV3 Simplified for training on Colab with custom dataset. 
 
 _A Collage of Training images_
-![image](https://github.com/theschoolofai/YoloV3/blob/master/output/train.png)
+![image](minion_results/train_batch0.png)
 
 
 We have added a very 'smal' Coco sample imageset in the folder called smalcoco. This is to make sure you can run it without issues on Colab.
@@ -22,7 +25,7 @@ You'll need to download the weights from the original source.
 For custom dataset:
 1. Clone this repo: https://github.com/miki998/YoloV3_Annotation_Tool
 2. Follow the installation steps as mentioned in the repo. 
-3. For the assignment, download 500 images of your unique object. 
+3. For the assignment, download 500 images of your unique object - "**minions**". 
 4. Annotate the images using the Annotation tool. 
 ```
 data
@@ -75,4 +78,21 @@ As you can see in the collage image above, a lot is going on, and if you are cre
 **Results**
 After training for 300 Epochs, results look awesome!
 
-![image](https://github.com/theschoolofai/YoloV3/blob/master/output/download.jpeg)
+<img src="minion_results/test_batch0.png">
+
+All the results can be found at [minion_results](minion_results/)
+
+#### YouTube Video
+A video of minions found on YouTube was passed through the trained model. The video can be found at [https://youtu.be/WRHMwZyMcu4](https://youtu.be/WRHMwZyMcu4) and also [minion_results/Minions_detected_clip.mp4](minion_results/Minions_detected_clip.mp4)
+
+[![YoloV3-Minion-Detector](https://img.youtube.com/vi/WRHMwZyMcu4/0.jpg)](https://www.youtube.com/watch?v=WRHMwZyMcu4)
+
+#### Detection on Unseen Images
+Tried to perform object detection on few unseen photos clicked on my camera and from the internet
+
+<img src="minion_results/detected_unseen_images/img03.jpg" height="300">
+
+<img src="minion_results/detected_unseen_images/img06.jpg" width="350">
+
+<img src="minion_results/detected_unseen_images/img08.jpg" height="300">
+
